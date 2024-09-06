@@ -17,13 +17,18 @@ const app=express()
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
-
+const corsOptions = {
+    origin: 'https://food-app-admin-rust.vercel.app', // Allow this origin
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+  };
   
-  app.use(cors());
+  app.use(cors(corsOptions));
   
   // Handle preflight requests
-//  app.options('*', cors(corsOptions))
-app.use(express.json())
+  app.options('*', cors(corsOptions))
+
+  app.use(express.json())
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -45,7 +50,7 @@ app.get('/',(req,res)=>{
 
 })
 app.use('/api', foodRouter )  
-// app.use('/images', express.static(path.join('/tmp', 'uploads')));
+app.use('/images', express.static(path.join('/tmp', 'uploads')));
 app.use('/user',userRouter)
 app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)
