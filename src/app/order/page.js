@@ -79,7 +79,7 @@ function Order() {
         amount:getTotalAmount()+2,
       }
     //   // console.log(data)
-      await axios.post("https://food-app-backend-gray.vercel.app/api/order/place",orderData,{headers:{token}})
+      await axios.post("https://food-app-backend-ashy.vercel.app/api/order/place",orderData,{headers:{token}})
      .then(res=>{
       if(res.data.success){
         const {session_url} = res.data

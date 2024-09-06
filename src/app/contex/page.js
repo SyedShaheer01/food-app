@@ -38,7 +38,7 @@ const ProviderContext= (props)=>{
         }
         if(token){
              
-            await axios.post("https://food-app-backend-gray.vercel.app/api/cart/addCart",{itemId},{headers:{token}})
+            await axios.post("https://food-app-backend-ashy.vercel.app/api/cart/addCart",{itemId},{headers:{token}})
             .then(res=>{
                 toast.success("product added to cart",{
                     autoClose:2000
@@ -71,7 +71,7 @@ const ProviderContext= (props)=>{
 
             
             setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
-            await axios.post("https://food-app-backend-gray.vercel.app/api/cart/removeCart",{itemId},{headers:{token}})
+            await axios.post("https://food-app-backend-ashy.vercel.app/api/cart/removeCart",{itemId},{headers:{token}})
             .then(res=>{
                 toast.success("product deleted from cart",{
                     autoClose:2000
@@ -94,7 +94,7 @@ const ProviderContext= (props)=>{
         if(token){
 
             
-            await axios.post("https://food-app-backend-gray.vercel.app/api/cart/getCart",{},{headers:{token}})
+            await axios.post("https://food-app-backend-ashy.vercel.app/api/cart/getCart",{},{headers:{token}})
             .then(res=>{
                 // console.log(res)
                 setCartItems(res.data.cartData)
@@ -130,7 +130,7 @@ const ProviderContext= (props)=>{
     
     const fetchFood= async()=>{
         
-        await axios.get("https://food-app-backend-gray.vercel.app/api/list")
+        await axios.get("https://food-app-backend-ashy.vercel.app/api/list")
 
         .then(res=>{
             console.log(res)

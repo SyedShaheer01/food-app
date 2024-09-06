@@ -27,7 +27,7 @@ function Verify() {
 
                 
                 
-                await axios.post("https://food-app-backend-gray.vercel.app/api/order/verify",{success, orderId})
+                await axios.post("https://food-app-backend-ashy.vercel.app/api/order/verify",{success, orderId})
                 .then(res=>{
                     console.log(res)
                     

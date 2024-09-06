@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import Main from "./main/page";
 import Login from "./login/page";
-// import Navbar from "./navbar/page";
-// import Banner from "./banner/page";
 import Footer from "./footer/page";
 import { usePathname } from "next/navigation";
 // import ProviderContext from "./contex/page";

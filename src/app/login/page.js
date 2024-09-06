@@ -43,7 +43,7 @@ const formSubmit= async(event)=>{
   setSpinner(true)
   if(currstate === "Signup"){
     try {
-      await axios.post("https://food-app-backend-gray.vercel.app/user/signup",data)
+      await axios.post("https://food-app-backend-ashy.vercel.app/user/signup",data)
       .then(res=>{
         console.log("response",res)
         if(data.email === "admin@gmail.com"){
@@ -76,7 +76,7 @@ const formSubmit= async(event)=>{
     
   }
   else{
-    axios.post("https://food-app-backend-gray.vercel.app/user/login",data)
+    axios.post("https://food-app-backend-ashy.vercel.app/user/login",data)
     .then(res=>{
       // console.log(res)
       if(data.email === "admin@gmail.com"){

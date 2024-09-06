@@ -6,15 +6,9 @@ import Banner from '../banner/page'
 import Menu from '../menu/page'
 import FoodDisplay from '../foodDisplay/page'
 import Mobile from '../mobileApp/page'
-// import Footer from '../footer/page'
-// import Login from '../login/page'
-// import Image from 'next/image'
-// import { assets } from '../asstes/assets'
 import { ToastContainer } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-  // import { usePathname } from 'next/navigation'
-  // import { StoreContext } from '../contex/page'
-  // import './main.css'
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 
 

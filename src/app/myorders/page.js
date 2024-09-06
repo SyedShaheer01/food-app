@@ -38,7 +38,7 @@ function MyOrder() {
 
   
   const fetchOrders = async()=>{
-        await axios.post("https://food-app-backend-gray.vercel.app/api/order/userorders",{},{headers:{token}}) 
+        await axios.post("https://food-app-backend-ashy.vercel.app/api/order/userorders",{},{headers:{token}}) 
         .then(res=>{
         setorders(res.data.data)
         console.log(res)
