@@ -12,11 +12,11 @@ import bodyParser from 'body-parser'
 
 
 const app=express()
-// const corsOptions = {
-//     origin: 'https://food-app-admin-rouge.vercel.app',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     allowedHeaders: ['Content-Type', 'Authorization']
-//   };
+const corsConfig = {
+    origin: "*",
+    Credential:true,
+    methods: ["GET", "POST", "PUT", "DELETE"]
+  };
 
   
   app.use(cors());
