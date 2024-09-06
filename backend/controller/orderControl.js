@@ -47,8 +47,8 @@ const placeOrder = async (req, res) => {
 
             line_items: line_items,
             mode: 'payment',
-            success_url: `https://food-app-vert-one.vercel.app/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url: `https://food-app-vert-one.vercel.app/verify?success=false&orderId=${newOrder._id}`,
+            success_url: `https://food-app-one-pearl.vercel.app/verify?success=true&orderId=${newOrder._id}`,
+            cancel_url: `https://food-app-one-pearl.vercel.app/verify?success=false&orderId=${newOrder._id}`,
         })
         res.send({ success: true, session_url: session.url })
 
