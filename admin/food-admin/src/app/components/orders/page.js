@@ -32,7 +32,7 @@ function Order() {
 
 const changeHandler= async(e,orderId)=>{
 
-  await axios.post("https://food-app-backend-gray.vercel.app/api/order/status",{orderId,status:e.target.value})
+  await axios.post("https://food-app-backend-ashy.vercel.app/api/order/status",{orderId,status:e.target.value})
   .then(res=>{
     console.log(res)
     if(res.data.success){
