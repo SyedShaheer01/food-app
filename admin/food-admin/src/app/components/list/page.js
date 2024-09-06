@@ -24,7 +24,7 @@ function List() {
   },[prodcut])
 
   const deleteProduct=(id)=>{
-    axios.post("https://food-app-backend-gray.vercel.app/api/foodremove",{
+    axios.post("https://food-app-backend-sable.vercel.app/api/foodremove",{
       id
     })
     

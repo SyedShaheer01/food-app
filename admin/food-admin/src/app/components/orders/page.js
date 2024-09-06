@@ -12,7 +12,7 @@ function Order() {
 
 
   const fetchOrder=async()=>{
-    await axios.get("https://food-app-backend-blue.vercel.app/api/order/Allorders")
+    await axios.get("https://food-app-backend-sable.vercel.app/api/order/Allorders")
     .then(res=>{
       console.log(res)
       setOrder(res.data.orders)
