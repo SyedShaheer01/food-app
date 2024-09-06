@@ -49,7 +49,7 @@ foodRouter.post("/add", upload.single("image"),async(req,res)=>{
       
       
           try {
-              console.log("req-->",req.body)
+              // console.log("req-->",req.body)
               // const food =new foodModel(req.body)
               await food.save()
               res.status(200).send({message:"Product added", success:true, details:food})
