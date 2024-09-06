@@ -19,10 +19,10 @@ const corsConfig = {
   };
 
   
+  app.options("", cors(corsConfig))
   app.use(cors());
   
   // Handle preflight requests
-//   app.options('*', cors(corsOptions))
 
   app.use(express.json())
 
