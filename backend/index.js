@@ -16,21 +16,16 @@ const app=express()
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
-const allowedOrigins = [
-    // 'https://food-app-admin-rust.vercel.app',  // Frontend
-    'https://food-app-admin-rust.vercel.app'        // Admin
-  ];
+const corsOptions = {
+    origin: 'https://food-app-admin-rust.vercel.app', // Allow this origin
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
+  };
   
-  // Configure CORS
-  app.use(cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    }
-  }));
+  app.use(cors(corsOptions));
+  
+  // Handle preflight requests
+  app.options('*', cors(corsOptions))
 
 
 app.options('*', cors());
