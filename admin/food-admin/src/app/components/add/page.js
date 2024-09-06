@@ -36,7 +36,7 @@ function Add() {
 
     try {
 
-     formData && await axios.post("https://food-app-backend-sable.vercel.app/api/add",formData)
+     formData && await axios.post("https://food-app-backend-ashy.vercel.app/api/add",formData)
       .then(res=>{
         console.log(res)
         Swal.fire({

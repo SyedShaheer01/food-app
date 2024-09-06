@@ -14,7 +14,7 @@ function List() {
 
 
   useEffect(()=>{
-     axios.get("http://localhost:8000/api/list")
+     axios.get("https://food-app-backend-ashy.vercel.app/api/list")
     .then(res=>{
       console.log(res)
     setProduct(res.data.data)
@@ -24,7 +24,7 @@ function List() {
   },[prodcut])
 
   const deleteProduct=(id)=>{
-    axios.post("https://food-app-backend-sable.vercel.app/api/foodremove",{
+    axios.post("https://food-app-backend-ashy.vercel.app/api/foodremove",{
       id
     })
     
