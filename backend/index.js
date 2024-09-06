@@ -14,7 +14,7 @@ import bodyParser from 'body-parser'
 const app=express()
 const corsConfig = {
     origin: "*",
-    Credential:true,
+    credential:true,
     methods: ["GET", "POST", "PUT", "DELETE"]
   };
 
