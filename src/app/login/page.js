@@ -47,7 +47,7 @@ const formSubmit= async(event)=>{
       .then(res=>{
         console.log("response",res)
         if(data.email === "admin@gmail.com"){
-          router.push("https://food-app-admin-rouge.vercel.app/")
+          router.push("https://food-app-admin-ten.vercel.app/")
   
         }
         Swal.fire({
@@ -80,7 +80,7 @@ const formSubmit= async(event)=>{
     .then(res=>{
       // console.log(res)
       if(data.email === "admin@gmail.com"){
-        router.push("https://food-app-admin-rouge.vercel.app/")
+        router.push("https://food-app-admin-ten.vercel.app/")
 
       }
       setSpinner(false)
