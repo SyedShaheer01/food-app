@@ -13,7 +13,7 @@ function Navbar() {
 
   const logOut=()=>{
     localStorage.removeItem("token")
-    router.push('https://food-app-rosy-one-46.vercel.app/')
+    router.push('https://food-app-one-pearl.vercel.app/')
   }
   return (
     <div className='navbar'>
