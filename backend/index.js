@@ -7,6 +7,7 @@ import 'dotenv/config.js'
 import cartRouter from './routes/cartRoute.js'
 import orderRouter from './routes/orderRoute.js'
 import path from 'path'
+import bodyParser from 'body-parser'
 
 
 
@@ -30,6 +31,9 @@ const corsOptions = {
 
 app.options('*', cors());
 app.use(express.json())
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const PORT= process.env.PORT || 8000
