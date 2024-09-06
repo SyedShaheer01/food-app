@@ -17,16 +17,12 @@ const app=express()
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
-const corsOptions = {
-    origin: '*', // Allow this origin
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization',
-  };
+
   
-  app.use(cors(corsOptions));
+  app.use(cors());
   
   // Handle preflight requests
-  app.options('*', cors(corsOptions))
+//   app.options('*', cors(corsOptions))
 
   app.use(express.json())
 
