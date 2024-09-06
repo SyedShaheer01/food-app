@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.admin-order{
+    padding: 20px;
+}
+
+
+.my-all-order{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 0fr;
+    border: 1px solid tomato;
+    width: 110%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+.my-all-order .bullet{
+    color: tomato;
+}
+.my-all-order .bullet span{
+    color: black;
+}
+select{
+    margin-left: 5px;
+    padding: 5px 0px;
+
+}
+
+@media(max-Width:600px){
+    .my-all-order{
+        display: grid;
+        grid-template-columns: 1.5fr 3.5fr 1.5fr 2fr 4fr;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 10px;
+        flex-wrap: wrap;
+    
+    }
+    .my-all-order img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .admin-order h1{
+        font-size: 22px;
+    }
+    select{
+        width: 70px;
+        font-size: 10px;
+        padding: 2px 0px;
+    }
+
+}
+

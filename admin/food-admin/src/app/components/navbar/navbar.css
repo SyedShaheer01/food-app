@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4%;
+    align-items: center;
+
+}
+.navbar .logo{
+    width: max(10%, 150px);
+
+}
+.navbar .profile{
+    width: 40px;
+    height: 40px;
+}
+
+.logout-btn{
+    padding: 8px 25px;
+    background-color: rgb(255, 193, 182);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-Width:600px){
+    .navbar .logo{
+        width: max(8%, 120px);
+
+
+    }
+}

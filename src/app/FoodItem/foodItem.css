@@ -1,0 +1,99 @@
+.food-con{
+
+    border-radius:  10px;
+    box-shadow: 0px 0px 10px #00000015;
+    animation: fadeIn 3s;
+    transition: 0.3s;
+}
+
+
+.food-rating p{
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.food-price{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: tomato;
+}
+.food-item-image{
+   
+    object-fit: contain;
+    border-radius: 10px 10px 0px 0px;
+}
+.food-info{
+    padding: 15px;
+    
+
+}
+.food-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.food-rating img{
+    width: 80px;
+
+}
+.minus{
+    background-color: rgb(243, 227, 227);
+    padding: 7px;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.add{
+   
+    align-items: center;
+    width: 50px;
+    margin-top: 10px;
+    position: relative;
+}
+.add img{
+    position: absolute;
+    bottom: 18px;
+    left: 185px;
+    cursor: pointer;
+    width: 45px;
+}
+
+
+.plus{
+    margin-top: 3px;
+    background-color: rgb(215, 244, 216);
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.food-cart{
+    position: absolute;
+    bottom: 17px;
+    left: 145px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 22px;
+    background-color: white;
+}
+
+@media (max-Width:900px){
+    .food-cart{
+        left: 53vw;
+        bottom: 25px;
+    }
+    .add img{
+        left: 63vw;
+        bottom: 25px;
+        width:60px !important;
+
+    }
+
+}
+
+

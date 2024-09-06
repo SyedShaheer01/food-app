@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cart{
+    margin-top: 100px;
+    
+   
+}
+.cart-nav{
+    margin: auto;
+    width: 80%;
+    
+}
+
+.cart-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-size: max(1vw,12px);
+    margin-left: 70px;
+   
+}
+span{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cart hr{
+    width: 90%;
+    margin-left: 50px;
+     border: 1px solid  rgb(229, 219, 219);
+}
+
+
+
+.cart-items img{
+    width: 50px;
+    margin-top: 5px;
+}
+.cart-item-items{
+    margin-bottom: 10px;
+    color: black;
+}
+.cross-icon{
+    cursor: pointer;
+    font-size: 18px;
+}
+.both-sec{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.promo-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.promo-det{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-sec{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.left-sec hr{
+    width: 100%;
+}
+.left-sec button{
+    background-color: tomato;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.right-det{
+    margin-bottom: 10px;
+}
+.right-inp{
+    display: flex;
+  
+}
+.right-inp button{
+    background-color: black;
+    color: white;
+    padding: 7px 40px;
+    border-radius: 4px;
+}
+.right-inp input{
+    flex: 1;
+    padding: 7px 30px;
+    background-color: #c9c9c9;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.right-inp input::placeholder{
+    color: black;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0;
+}
+@media (max-Width:900px){
+    .both-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart{
+        padding: 20px;
+    }
+    .cart-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        font-size: max(1vw,9px);
+        margin-left: 0;
+    }
+    span{
+        font-size: 9px;
+    }
+    .right-inp input{
+        flex: 0;
+        padding: 7px 10px;
+        background-color: #c9c9c9;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+
+    }
+    .cart hr{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .left-sec{
+        width: 100%;
+        padding:5px 30px;
+    
+    }
+    .left-sec button{
+        padding: 7px 35px;
+        width: 90%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+
+    .right-sec{
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .right-inp button{
+        padding: 7px 30px;
+    }
+   
+}

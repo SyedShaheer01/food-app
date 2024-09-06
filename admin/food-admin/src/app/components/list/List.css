@@ -1,0 +1,45 @@
+.db-product{
+    margin: 30px auto;
+}
+
+.db-flex{
+    display: grid;
+    grid-template-columns: 2.5fr 4.5fr 3fr 2.5fr 2.5fr 0.9fr;
+    align-items: center;
+    gap: 10px;
+    font-size: max(1vw,12px);
+}
+.db-flex img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.db-product-title{
+    background-color: #c9c9c9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.db-remove{
+    cursor: pointer;
+}
+
+@media(max-Width:900px){
+    .db-flex{
+    display: grid;
+    grid-template-columns: 2.5fr 3fr 3fr 2.5fr 4fr 2fr;
+    align-items: center;
+    gap: 10px;
+    font-size:max(1vw,10px);
+
+    }
+    .db-flex img{
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    .db-product{
+        padding: 10px;
+    }
+    
+}

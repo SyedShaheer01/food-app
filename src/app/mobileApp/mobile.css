@@ -1,0 +1,27 @@
+/* .mobile-parent{
+    text-align: center;
+} */
+
+.mobile-sec h1{
+    font-size: 30px;
+    margin-top: 12%;
+    font-weight: 600;
+    text-align: center;
+}
+.mobile-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    cursor: pointer;
+    
+
+}
+.mobile-add img{
+    width: 160px;
+}
+.mobile-add img:hover{
+transform: scale(1.1);
+transition: 0.3s;
+}
