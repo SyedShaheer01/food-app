@@ -17,19 +17,12 @@ const app=express()
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
-const corsOptions = {
-    origin: 'https://food-app-admin-rust.vercel.app', // Allow this origin
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization',
-  };
+
   
-  app.use(cors(corsOptions));
+  app.use(cors());
   
   // Handle preflight requests
-  app.options('*', cors(corsOptions))
-
-
-app.options('*', cors());
+//  app.options('*', cors(corsOptions))
 app.use(express.json())
 
 app.use(bodyParser.json());
