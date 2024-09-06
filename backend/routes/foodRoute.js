@@ -9,7 +9,7 @@ import foodModel from '../modal/index.js'
 
 const foodRouter=express.Router()
 
-/// image storage
+// / image storage
 
 // (req, file, cb) {
 //   const uploadPath = path.join('/tmp', 'uploads');
