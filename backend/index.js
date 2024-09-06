@@ -16,8 +16,21 @@ const app=express()
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
-app.use(cors())
-
+const allowedOrigins = [
+    // 'https://food-app-admin-rust.vercel.app',  // Frontend
+    'https://food-app-admin-rust.vercel.app'        // Admin
+  ];
+  
+  // Configure CORS
+  app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
+  }));
 
 
 app.use(express.json())
@@ -39,7 +52,7 @@ app.get('/',(req,res)=>{
 
 })
 app.use('/api', foodRouter )  
-app.use('/images', express.static(path.join('/tmp', 'uploads')));
+// app.use('/images', express.static(path.join('/tmp', 'uploads')));
 app.use('/user',userRouter)
 app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)

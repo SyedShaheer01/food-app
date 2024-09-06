@@ -36,9 +36,7 @@ function Add() {
 
     try {
 
-     await axios.post("https://food-app-backend-sable.vercel.app/api/add/",formData,{headers:{
-      'Access-Control-Allow-Origin':'https://food-app-admin-rust.vercel.app'
-     }})
+     await axios.post("https://food-app-backend-sable.vercel.app/api/add/",formData,)
       .then(res=>{
         console.log(res)
         Swal.fire({
