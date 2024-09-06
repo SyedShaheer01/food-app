@@ -18,7 +18,7 @@ const app=express()
 //     allowedHeaders: ['Content-Type', 'Authorization']
 //   };
 const corsOptions = {
-    origin: 'https://food-app-admin-rust.vercel.app', // Allow this origin
+    origin: '*', // Allow this origin
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
   };
