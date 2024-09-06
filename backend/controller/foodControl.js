@@ -1,6 +1,6 @@
 import foodModel from "../modal/index.js";
-import fs from 'fs-extra'
-import cloudinary from "../utils/cloudinary.js";
+// import fs from 'fs-extra'
+// import cloudinary from "../utils/cloudinary.js";
 
 /// add food item
 
@@ -54,12 +54,12 @@ const remove= async (req,res)=>{
 
     try {
 
-        const food = await foodModel.findById(req.body.id)
+        // const food = await foodModel.findById(req.body.id)
 
-        fs.remove(`uploads/${food.image}`, err => {
-            if (err) return console.error(err)
-            console.log('success!')
-          })
+        // fs.remove(`uploads/${food.image}`, err => {
+        //     if (err) return console.error(err)
+        //     console.log('success!')
+        //   })
 
         await foodModel.findByIdAndDelete(req.body.id)
         
