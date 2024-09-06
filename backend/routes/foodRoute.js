@@ -27,7 +27,7 @@ const storage = multer.diskStorage({
       },
       
     filename:(req, file, cb)=> {
-    console.log("file--->", file)
+    // console.log("file--->", file)
       return cb(null, file.originalname) ////,file.mimetype
     }
   })
